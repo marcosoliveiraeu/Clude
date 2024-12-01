@@ -1,0 +1,6 @@
+@CludeTestApi_HostAddress = http://localhost:5277
+
+GET {{CludeTestApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

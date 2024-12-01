@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CludeTestApi</name>
+    </assembly>
+    <members>
+        <member name="M:CludeTestApi.Controllers.EspecialidadeController.GetEspecialidades">
+            <summary>
+                Consulta de Especialidades
+            </summary>
+            <remarks>
+                Retorna todas as especialidades cadastradas no banco de dados
+            </remarks>
+            <returns></returns>
+            <response code="200">Lista de especialidades</response>
+            <response code="400">Nenhuma especialidade cadastrada no banco de dados</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:CludeTestApi.Controllers.ProfissionalController.GetProfissionais">
+            <summary>
+                Consulta de Profissionais
+            </summary>
+            <remarks>
+                Retorna os profissionais cadastrados no banco de dados
+            </remarks>
+            <returns></returns>
+            <response code="200">Lista de profissionais</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:CludeTestApi.Controllers.ProfissionalController.GetProfissionaisByEspecialidade(System.Int32)">
+            <summary>
+                Consulta de Profissionais filtrando por especialidade
+            </summary>
+            <remarks>
+                Retorna os profissionais cadastrados no banco de dados de acordo com a especialidade passada via parametro
+            </remarks>
+            <returns></returns>
+            <response code="200">Lista de profissionais</response>
+            <response code="400">Parâmetros inválidos</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:CludeTestApi.Controllers.ProfissionalController.GetProfissionalById(System.Int32)">
+            <summary>
+                Consulta de Profissionais filtrando por Id do profissional
+            </summary>
+            <remarks>
+                Retorna um profissional de acordo com o Id passado como parametro
+            </remarks>
+            <returns></returns>
+            <response code="200">Detalhes do profissional procurado e retornado com sucesso</response>
+            <response code="400">Parâmetros inválidos</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:CludeTestApi.Controllers.ProfissionalController.IncluirProfissional(CludeTestApi.DTOs.AddProfissionalDto)">
+            <summary>
+                Incluir Profissional 
+            </summary>
+            <remarks>
+                Inclui um profissional no banco de dados de acordo com os parametros passados
+            </remarks>
+            <returns></returns>
+            <response code="201">Profissional incluído com sucesso</response>
+            <response code="400">Parâmetros inválidos</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:CludeTestApi.Controllers.ProfissionalController.ExcluirProfissional(System.Int32)">
+            <summary>
+                Excluir profissional
+            </summary>
+            <remarks>
+                Exclui um profissional de acordo com o Id passado como parametro
+            </remarks>
+            <returns></returns>
+            <response code="200">Profissional excluído com sucesso</response>
+            <response code="400">Parâmetros inválidos</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="M:CludeTestApi.Controllers.ProfissionalController.EditarProfissional(CludeTestApi.DTOs.EditProfissionalDto)">
+            <summary>
+                Editar Profissional 
+            </summary>
+            <remarks>
+                Altera os dados do profissional no banco de dados de acordo com os parametros passados
+            </remarks>
+            <returns></returns>
+            <response code="201">Profissional alterado com sucesso</response>
+            <response code="400">Parâmetros inválidos</response>
+            <response code="500">Erro interno</response>
+        </member>
+        <member name="T:CludeTestApi.Migrations.InicialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:CludeTestApi.Migrations.InicialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CludeTestApi.Migrations.InicialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CludeTestApi.Migrations.InicialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,28 @@
+.titulodropdown {
+    color: rgb(129, 129, 129);
+    padding-left: 15px;    
+}
+
+.custom-btn {
+    background-color: #c8d8c8!important; 
+    border-color: #e5f2e5 !important;
+    color: #234d20 !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width: 290px;   
+}  
+
+.custom-btn:hover {
+    background-color: #7fbf7f !important; 
+}
+
+.dropdown-item {
+    font-size: 14px !important;              
+    font-weight: bold !important;            
+    color: #333333 !important;              
+}
+  
+.dropdown-item:hover {
+    background-color: #7fbf7f !important             
+}
+  
